@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7363976da4d463b92277c69464dea4a, type: 3}
+  m_Name: BasicAnimation
+  m_EditorClassIdentifier: 
+  AnimationName: BasicAnimation
+  Objects:
+  - ObjectKey: 
+    Types:
+    - Type:
+        TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      Properties:
+      - PropertyName: localPosition.x
+        Keyframes:
+        - Time: 0
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: localPosition.x
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 1
+          Value: 1.29
+          InTangent: 0
+          OutTangent: 0
+          Property: localPosition.x
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 1.8333334
+          Value: 0.88
+          InTangent: 0
+          OutTangent: 0
+          Property: localPosition.x
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: localPosition.y
+        Keyframes:
+        - Time: 0
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: localPosition.y
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 1
+          Value: -3.52
+          InTangent: 0
+          OutTangent: 0
+          Property: localPosition.y
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 1.8333334
+          Value: 2.12
+          InTangent: 0
+          OutTangent: 0
+          Property: localPosition.y
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: localPosition.z
+        Keyframes:
+        - Time: 0
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: localPosition.z
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 1
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: localPosition.z
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 1.8333334
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: localPosition.z
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+  Events:
+  - Index: 1
+    Time: 0.5
+    EvtName: Hello
+  - Index: 2
+    Time: 1
+    EvtName: World

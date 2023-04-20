@@ -1,9 +1,8 @@
-/*using System;
+﻿using System;
 
 [System.Serializable]
 public class SerializableType
 {
-    // 存储类型的完全限定名，包括程序集信息。
     public string TypeName;
     private Type mType;
     public Type ActualType => mType ??= Type.GetType(TypeName);
@@ -13,4 +12,14 @@ public class SerializableType
     {
         TypeName = type.AssemblyQualifiedName;
     }
-}*/
+    
+    public static implicit operator Type(SerializableType typeKeyframes)
+    {
+        return typeKeyframes.ActualType;
+    }
+
+    public static implicit operator SerializableType(Type type)
+    {
+        return new SerializableType(type);
+    }
+}

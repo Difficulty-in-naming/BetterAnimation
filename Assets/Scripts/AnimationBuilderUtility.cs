@@ -46,4 +46,9 @@ public static class AnimationBuilderExtension
         builder.Sequence.PlayForward();
         return builder;
     }
+
+    public static void Kill(this AnimationBuilder builder,bool complete = false)
+    {
+        builder.Sequence.Kill(complete);
+    }
 }
