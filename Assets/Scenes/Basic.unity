@@ -301,6 +301,8 @@ GameObject:
   - component: {fileID: 1074045865}
   - component: {fileID: 1074045864}
   - component: {fileID: 1074045863}
+  - component: {fileID: 1074045867}
+  - component: {fileID: 1074045866}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -325,7 +327,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 374.88007, y: 212.61894}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1074045863
@@ -410,6 +412,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1074045861}
   m_CullTransparentMesh: 1
+--- !u!114 &1074045866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074045861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a1c5f6cf34e2c4a80e2ecd7bfbe35b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayAutomatically: 0
+  AnimationClip:
+  - {fileID: 7400000, guid: 1a0ca0d796a979540833b2ae5d847d66, type: 2}
+  AnimateProto:
+  - {fileID: 11400000, guid: 3cae7af7da2533e4db81d137c794e50f, type: 2}
+--- !u!114 &1074045867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074045861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdb6a07f64bfd44889df4fa4a787e27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Animation: {fileID: 1074045866}
+  Name: BasicAnimation
 --- !u!1 &1279606103
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,21 +477,7 @@ MonoBehaviour:
   AnimationClip:
   - {fileID: 7400000, guid: 1a0ca0d796a979540833b2ae5d847d66, type: 2}
   AnimateProto:
-  - AnimationName: New Animation
-    Data: '{"Objects":[{"ObjectKey":"","Types":[{"Type":{"TypeName":"UnityEngine.Transform,
-      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"},"Properties":[{"PropertyName":"localPosition.x","Keyframes":[{"Time":0.0,"Value":0.0,"InTangent":0.0,"OutTangent":0.0,"Property":"localPosition.x","InWeight":0.3333333432674408,"OutWeight":0.3333333432674408,"Path":"","Type":{"TypeName":"UnityEngine.Transform,
-      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"},"ObjectKeyPair":""},{"Time":1.0,"Value":1.2899999618530274,"InTangent":0.0,"OutTangent":0.0,"Property":"localPosition.x","InWeight":0.3333333432674408,"OutWeight":0.3333333432674408,"Path":"","Type":{"TypeName":"UnityEngine.Transform,
-      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"},"ObjectKeyPair":""},{"Time":1.8333333730697632,"Value":0.8799999952316284,"InTangent":0.0,"OutTangent":0.0,"Property":"localPosition.x","InWeight":0.3333333432674408,"OutWeight":0.3333333432674408,"Path":"","Type":{"TypeName":"UnityEngine.Transform,
-      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"},"ObjectKeyPair":""}]},{"PropertyName":"localPosition.y","Keyframes":[{"Time":0.0,"Value":0.0,"InTangent":0.0,"OutTangent":0.0,"Property":"localPosition.y","InWeight":0.3333333432674408,"OutWeight":0.3333333432674408,"Path":"","Type":{"TypeName":"UnityEngine.Transform,
-      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"},"ObjectKeyPair":""},{"Time":1.0,"Value":-3.5199999809265138,"InTangent":0.0,"OutTangent":0.0,"Property":"localPosition.y","InWeight":0.3333333432674408,"OutWeight":0.3333333432674408,"Path":"","Type":{"TypeName":"UnityEngine.Transform,
-      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"},"ObjectKeyPair":""},{"Time":1.8333333730697632,"Value":2.119999885559082,"InTangent":0.0,"OutTangent":0.0,"Property":"localPosition.y","InWeight":0.3333333432674408,"OutWeight":0.3333333432674408,"Path":"","Type":{"TypeName":"UnityEngine.Transform,
-      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"},"ObjectKeyPair":""}]},{"PropertyName":"localPosition.z","Keyframes":[{"Time":0.0,"Value":0.0,"InTangent":0.0,"OutTangent":0.0,"Property":"localPosition.z","InWeight":0.3333333432674408,"OutWeight":0.3333333432674408,"Path":"","Type":{"TypeName":"UnityEngine.Transform,
-      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"},"ObjectKeyPair":""},{"Time":1.0,"Value":0.0,"InTangent":0.0,"OutTangent":0.0,"Property":"localPosition.z","InWeight":0.3333333432674408,"OutWeight":0.3333333432674408,"Path":"","Type":{"TypeName":"UnityEngine.Transform,
-      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"},"ObjectKeyPair":""},{"Time":1.8333333730697632,"Value":0.0,"InTangent":0.0,"OutTangent":0.0,"Property":"localPosition.z","InWeight":0.3333333432674408,"OutWeight":0.3333333432674408,"Path":"","Type":{"TypeName":"UnityEngine.Transform,
-      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"},"ObjectKeyPair":""}]}]}]}],"Events":[{"Index":1,"Time":0.5,"EvtName":"Hello"},{"Index":2,"Time":1.0,"EvtName":"World"}]}'
-  ObjectDictionary:
-    m_Keys: []
-    m_Values: []
+  - {fileID: 0}
 --- !u!212 &1279606105
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -535,7 +554,6 @@ GameObject:
   - component: {fileID: 1875615137}
   - component: {fileID: 1875615140}
   - component: {fileID: 1875615139}
-  - component: {fileID: 1875615138}
   m_Layer: 5
   m_Name: Play
   m_TagString: Untagged
@@ -562,20 +580,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1875615138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1875615136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fdb6a07f64bfd44889df4fa4a787e27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Animation: {fileID: 1279606104}
-  Name: New Animation
 --- !u!114 &1875615139
 MonoBehaviour:
   m_ObjectHideFlags: 0

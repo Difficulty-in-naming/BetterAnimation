@@ -1,0 +1,3403 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7363976da4d463b92277c69464dea4a, type: 3}
+  m_Name: HumanoidDefault
+  m_EditorClassIdentifier: 
+  AnimationName: HumanoidDefault
+  Objects:
+  - ObjectKey: 
+    Types:
+    - Type:
+        TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      Properties:
+      - PropertyName: rootT.x
+        Keyframes:
+        - Time: 0
+          Value: 0.0023206125
+          InTangent: 0
+          OutTangent: 0
+          Property: rootT.x
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.0023206125
+          InTangent: 0
+          OutTangent: 0
+          Property: rootT.x
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rootT.y
+        Keyframes:
+        - Time: 0
+          Value: 0.9978025
+          InTangent: 0
+          OutTangent: 0
+          Property: rootT.y
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.9978025
+          InTangent: 0
+          OutTangent: 0
+          Property: rootT.y
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rootT.z
+        Keyframes:
+        - Time: 0
+          Value: 0.0036914505
+          InTangent: 0
+          OutTangent: 0
+          Property: rootT.z
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.0036914505
+          InTangent: 0
+          OutTangent: 0
+          Property: rootT.z
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rootQ.x
+        Keyframes:
+        - Time: 0
+          Value: 0.0009904206
+          InTangent: 0
+          OutTangent: 0
+          Property: rootQ.x
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.0009904206
+          InTangent: 0
+          OutTangent: 0
+          Property: rootQ.x
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rootQ.y
+        Keyframes:
+        - Time: 0
+          Value: 0.000000029802322
+          InTangent: 0
+          OutTangent: 0
+          Property: rootQ.y
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.000000029802322
+          InTangent: 0
+          OutTangent: 0
+          Property: rootQ.y
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rootQ.z
+        Keyframes:
+        - Time: 0
+          Value: -0.000000029802322
+          InTangent: 0
+          OutTangent: 0
+          Property: rootQ.z
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.000000029802322
+          InTangent: 0
+          OutTangent: 0
+          Property: rootQ.z
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rootQ.w
+        Keyframes:
+        - Time: 0
+          Value: 0.9999995
+          InTangent: 0
+          OutTangent: 0
+          Property: rootQ.w
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.9999995
+          InTangent: 0
+          OutTangent: 0
+          Property: rootQ.w
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftFootT.x
+        Keyframes:
+        - Time: 0
+          Value: -0.09074765
+          InTangent: 0
+          OutTangent: 0
+          Property: leftFootT.x
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.09074765
+          InTangent: 0
+          OutTangent: 0
+          Property: leftFootT.x
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftFootT.y
+        Keyframes:
+        - Time: 0
+          Value: -0.99597967
+          InTangent: 0
+          OutTangent: 0
+          Property: leftFootT.y
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.99597967
+          InTangent: 0
+          OutTangent: 0
+          Property: leftFootT.y
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftFootT.z
+        Keyframes:
+        - Time: 0
+          Value: -0.032569747
+          InTangent: 0
+          OutTangent: 0
+          Property: leftFootT.z
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.032569747
+          InTangent: 0
+          OutTangent: 0
+          Property: leftFootT.z
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftFootQ.x
+        Keyframes:
+        - Time: 0
+          Value: -0.50049496
+          InTangent: 0
+          OutTangent: 0
+          Property: leftFootQ.x
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.50049496
+          InTangent: 0
+          OutTangent: 0
+          Property: leftFootQ.x
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftFootQ.y
+        Keyframes:
+        - Time: 0
+          Value: 0.4995045
+          InTangent: 0
+          OutTangent: 0
+          Property: leftFootQ.y
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.4995045
+          InTangent: 0
+          OutTangent: 0
+          Property: leftFootQ.y
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftFootQ.z
+        Keyframes:
+        - Time: 0
+          Value: -0.50049496
+          InTangent: 0
+          OutTangent: 0
+          Property: leftFootQ.z
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.50049496
+          InTangent: 0
+          OutTangent: 0
+          Property: leftFootQ.z
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftFootQ.w
+        Keyframes:
+        - Time: 0
+          Value: 0.49950463
+          InTangent: 0
+          OutTangent: 0
+          Property: leftFootQ.w
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.49950463
+          InTangent: 0
+          OutTangent: 0
+          Property: leftFootQ.w
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightFootT.x
+        Keyframes:
+        - Time: 0
+          Value: 0.08610656
+          InTangent: 0
+          OutTangent: 0
+          Property: rightFootT.x
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.08610656
+          InTangent: 0
+          OutTangent: 0
+          Property: rightFootT.x
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightFootT.y
+        Keyframes:
+        - Time: 0
+          Value: -0.99597967
+          InTangent: 0
+          OutTangent: 0
+          Property: rightFootT.y
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.99597967
+          InTangent: 0
+          OutTangent: 0
+          Property: rightFootT.y
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightFootT.z
+        Keyframes:
+        - Time: 0
+          Value: -0.03256977
+          InTangent: 0
+          OutTangent: 0
+          Property: rightFootT.z
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.03256977
+          InTangent: 0
+          OutTangent: 0
+          Property: rightFootT.z
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightFootQ.x
+        Keyframes:
+        - Time: 0
+          Value: -0.50049496
+          InTangent: 0
+          OutTangent: 0
+          Property: rightFootQ.x
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.50049496
+          InTangent: 0
+          OutTangent: 0
+          Property: rightFootQ.x
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightFootQ.y
+        Keyframes:
+        - Time: 0
+          Value: 0.49950442
+          InTangent: 0
+          OutTangent: 0
+          Property: rightFootQ.y
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.49950442
+          InTangent: 0
+          OutTangent: 0
+          Property: rightFootQ.y
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightFootQ.z
+        Keyframes:
+        - Time: 0
+          Value: -0.50049496
+          InTangent: 0
+          OutTangent: 0
+          Property: rightFootQ.z
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.50049496
+          InTangent: 0
+          OutTangent: 0
+          Property: rightFootQ.z
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightFootQ.w
+        Keyframes:
+        - Time: 0
+          Value: 0.4995047
+          InTangent: 0
+          OutTangent: 0
+          Property: rightFootQ.w
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.4995047
+          InTangent: 0
+          OutTangent: 0
+          Property: rightFootQ.w
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftHandT.x
+        Keyframes:
+        - Time: 0
+          Value: -0.6962602
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHandT.x
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.6962602
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHandT.x
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftHandT.y
+        Keyframes:
+        - Time: 0
+          Value: 0.39508566
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHandT.y
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.39508566
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHandT.y
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftHandT.z
+        Keyframes:
+        - Time: 0
+          Value: 0.029317556
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHandT.z
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.029317556
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHandT.z
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftHandQ.x
+        Keyframes:
+        - Time: 0
+          Value: 0.0011194708
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHandQ.x
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.0011194708
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHandQ.x
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftHandQ.y
+        Keyframes:
+        - Time: 0
+          Value: 0.028612569
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHandQ.y
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.028612569
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHandQ.y
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftHandQ.z
+        Keyframes:
+        - Time: 0
+          Value: 0.99959004
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHandQ.z
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.99959004
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHandQ.z
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftHandQ.w
+        Keyframes:
+        - Time: 0
+          Value: 0.000031995765
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHandQ.w
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.000031995765
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHandQ.w
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightHandT.x
+        Keyframes:
+        - Time: 0
+          Value: 0.6916188
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHandT.x
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.6916188
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHandT.x
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightHandT.y
+        Keyframes:
+        - Time: 0
+          Value: 0.39508596
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHandT.y
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.39508596
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHandT.y
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightHandT.z
+        Keyframes:
+        - Time: 0
+          Value: 0.029317655
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHandT.z
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.029317655
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHandT.z
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightHandQ.x
+        Keyframes:
+        - Time: 0
+          Value: -0.02861254
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHandQ.x
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.02861254
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHandQ.x
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightHandQ.y
+        Keyframes:
+        - Time: 0
+          Value: -0.0011195474
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHandQ.y
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.0011195474
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHandQ.y
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightHandQ.z
+        Keyframes:
+        - Time: 0
+          Value: 0.000032021475
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHandQ.z
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.000032021475
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHandQ.z
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightHandQ.w
+        Keyframes:
+        - Time: 0
+          Value: 0.99959004
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHandQ.w
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.99959004
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHandQ.w
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: spine Front-Back
+        Keyframes:
+        - Time: 0
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: spine Front-Back
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: spine Front-Back
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: spine Left-Right
+        Keyframes:
+        - Time: 0
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: spine Left-Right
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: spine Left-Right
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: spine Twist Left-Right
+        Keyframes:
+        - Time: 0
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: spine Twist Left-Right
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: spine Twist Left-Right
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: chest Front-Back
+        Keyframes:
+        - Time: 0
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: chest Front-Back
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: chest Front-Back
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: chest Left-Right
+        Keyframes:
+        - Time: 0
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: chest Left-Right
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: chest Left-Right
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: chest Twist Left-Right
+        Keyframes:
+        - Time: 0
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: chest Twist Left-Right
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: chest Twist Left-Right
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: upperChest Front-Back
+        Keyframes:
+        - Time: 0
+          Value: 1.6044449e-22
+          InTangent: 0
+          OutTangent: 0
+          Property: upperChest Front-Back
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 1.6044449e-22
+          InTangent: 0
+          OutTangent: 0
+          Property: upperChest Front-Back
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: upperChest Left-Right
+        Keyframes:
+        - Time: 0
+          Value: 2.0281193e-14
+          InTangent: 0
+          OutTangent: 0
+          Property: upperChest Left-Right
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 2.0281193e-14
+          InTangent: 0
+          OutTangent: 0
+          Property: upperChest Left-Right
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: upperChest Twist Left-Right
+        Keyframes:
+        - Time: 0
+          Value: 3.1805545e-15
+          InTangent: 0
+          OutTangent: 0
+          Property: upperChest Twist Left-Right
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 3.1805545e-15
+          InTangent: 0
+          OutTangent: 0
+          Property: upperChest Twist Left-Right
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: neck Nod Down-Up
+        Keyframes:
+        - Time: 0
+          Value: 0.21768919
+          InTangent: 0
+          OutTangent: 0
+          Property: neck Nod Down-Up
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.21768919
+          InTangent: 0
+          OutTangent: 0
+          Property: neck Nod Down-Up
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: neck Tilt Left-Right
+        Keyframes:
+        - Time: 0
+          Value: -0.0000005364417
+          InTangent: 0
+          OutTangent: 0
+          Property: neck Tilt Left-Right
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.0000005364417
+          InTangent: 0
+          OutTangent: 0
+          Property: neck Tilt Left-Right
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: neck Turn Left-Right
+        Keyframes:
+        - Time: 0
+          Value: -2.5518072e-15
+          InTangent: 0
+          OutTangent: 0
+          Property: neck Turn Left-Right
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -2.5518072e-15
+          InTangent: 0
+          OutTangent: 0
+          Property: neck Turn Left-Right
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: head Nod Down-Up
+        Keyframes:
+        - Time: 0
+          Value: -0.1385466
+          InTangent: 0
+          OutTangent: 0
+          Property: head Nod Down-Up
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.1385466
+          InTangent: 0
+          OutTangent: 0
+          Property: head Nod Down-Up
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: head Tilt Left-Right
+        Keyframes:
+        - Time: 0
+          Value: 0.0000005064527
+          InTangent: 0
+          OutTangent: 0
+          Property: head Tilt Left-Right
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.0000005064527
+          InTangent: 0
+          OutTangent: 0
+          Property: head Tilt Left-Right
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: head Turn Left-Right
+        Keyframes:
+        - Time: 0
+          Value: 0.0000002003913
+          InTangent: 0
+          OutTangent: 0
+          Property: head Turn Left-Right
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.0000002003913
+          InTangent: 0
+          OutTangent: 0
+          Property: head Turn Left-Right
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: left Eye Down-Up
+        Keyframes:
+        - Time: 0
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: left Eye Down-Up
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: left Eye Down-Up
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: left Eye In-Out
+        Keyframes:
+        - Time: 0
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: left Eye In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: left Eye In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: right Eye Down-Up
+        Keyframes:
+        - Time: 0
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: right Eye Down-Up
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: right Eye Down-Up
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: right Eye In-Out
+        Keyframes:
+        - Time: 0
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: right Eye In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: right Eye In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: jaw Close
+        Keyframes:
+        - Time: 0
+          Value: 1.0285543
+          InTangent: 0
+          OutTangent: 0
+          Property: jaw Close
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 1.0285543
+          InTangent: 0
+          OutTangent: 0
+          Property: jaw Close
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: jaw Left-Right
+        Keyframes:
+        - Time: 0
+          Value: -0.0000021457988
+          InTangent: 0
+          OutTangent: 0
+          Property: jaw Left-Right
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.0000021457988
+          InTangent: 0
+          OutTangent: 0
+          Property: jaw Left-Right
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: left Upper Leg Front-Back
+        Keyframes:
+        - Time: 0
+          Value: 0.5288592
+          InTangent: 0
+          OutTangent: 0
+          Property: left Upper Leg Front-Back
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.5288592
+          InTangent: 0
+          OutTangent: 0
+          Property: left Upper Leg Front-Back
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: left Upper Leg In-Out
+        Keyframes:
+        - Time: 0
+          Value: 0.00000017935282
+          InTangent: 0
+          OutTangent: 0
+          Property: left Upper Leg In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.00000017935282
+          InTangent: 0
+          OutTangent: 0
+          Property: left Upper Leg In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: left Upper Leg Twist In-Out
+        Keyframes:
+        - Time: 0
+          Value: -0.000000071362784
+          InTangent: 0
+          OutTangent: 0
+          Property: left Upper Leg Twist In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.000000071362784
+          InTangent: 0
+          OutTangent: 0
+          Property: left Upper Leg Twist In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: left Lower Leg Stretch
+        Keyframes:
+        - Time: 0
+          Value: 0.93421274
+          InTangent: 0
+          OutTangent: 0
+          Property: left Lower Leg Stretch
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.93421274
+          InTangent: 0
+          OutTangent: 0
+          Property: left Lower Leg Stretch
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: left Lower Leg Twist In-Out
+        Keyframes:
+        - Time: 0
+          Value: -0.00000023841858
+          InTangent: 0
+          OutTangent: 0
+          Property: left Lower Leg Twist In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.00000023841858
+          InTangent: 0
+          OutTangent: 0
+          Property: left Lower Leg Twist In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: left Foot Up-Down
+        Keyframes:
+        - Time: 0
+          Value: -0.03387608
+          InTangent: 0
+          OutTangent: 0
+          Property: left Foot Up-Down
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.03387608
+          InTangent: 0
+          OutTangent: 0
+          Property: left Foot Up-Down
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: left Foot Twist In-Out
+        Keyframes:
+        - Time: 0
+          Value: -0.00000055896726
+          InTangent: 0
+          OutTangent: 0
+          Property: left Foot Twist In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.00000055896726
+          InTangent: 0
+          OutTangent: 0
+          Property: left Foot Twist In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: left Toes Up-Down
+        Keyframes:
+        - Time: 0
+          Value: -1.4463487e-29
+          InTangent: 0
+          OutTangent: 0
+          Property: left Toes Up-Down
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -1.4463487e-29
+          InTangent: 0
+          OutTangent: 0
+          Property: left Toes Up-Down
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: right Upper Leg Front-Back
+        Keyframes:
+        - Time: 0
+          Value: 0.5288592
+          InTangent: 0
+          OutTangent: 0
+          Property: right Upper Leg Front-Back
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.5288592
+          InTangent: 0
+          OutTangent: 0
+          Property: right Upper Leg Front-Back
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: right Upper Leg In-Out
+        Keyframes:
+        - Time: 0
+          Value: 0.000000049938695
+          InTangent: 0
+          OutTangent: 0
+          Property: right Upper Leg In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.000000049938695
+          InTangent: 0
+          OutTangent: 0
+          Property: right Upper Leg In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: right Upper Leg Twist In-Out
+        Keyframes:
+        - Time: 0
+          Value: -0.00000008376336
+          InTangent: 0
+          OutTangent: 0
+          Property: right Upper Leg Twist In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.00000008376336
+          InTangent: 0
+          OutTangent: 0
+          Property: right Upper Leg Twist In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: right Lower Leg Stretch
+        Keyframes:
+        - Time: 0
+          Value: 0.93421274
+          InTangent: 0
+          OutTangent: 0
+          Property: right Lower Leg Stretch
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.93421274
+          InTangent: 0
+          OutTangent: 0
+          Property: right Lower Leg Stretch
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: right Lower Leg Twist In-Out
+        Keyframes:
+        - Time: 0
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: right Lower Leg Twist In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: right Lower Leg Twist In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: right Foot Up-Down
+        Keyframes:
+        - Time: 0
+          Value: -0.03387639
+          InTangent: 0
+          OutTangent: 0
+          Property: right Foot Up-Down
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.03387639
+          InTangent: 0
+          OutTangent: 0
+          Property: right Foot Up-Down
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: right Foot Twist In-Out
+        Keyframes:
+        - Time: 0
+          Value: -0.00000034893546
+          InTangent: 0
+          OutTangent: 0
+          Property: right Foot Twist In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.00000034893546
+          InTangent: 0
+          OutTangent: 0
+          Property: right Foot Twist In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: right Toes Up-Down
+        Keyframes:
+        - Time: 0
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: right Toes Up-Down
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0
+          InTangent: 0
+          OutTangent: 0
+          Property: right Toes Up-Down
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: left Shoulder Down-Up
+        Keyframes:
+        - Time: 0
+          Value: -0.6577008
+          InTangent: 0
+          OutTangent: 0
+          Property: left Shoulder Down-Up
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.6577008
+          InTangent: 0
+          OutTangent: 0
+          Property: left Shoulder Down-Up
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: left Shoulder Front-Back
+        Keyframes:
+        - Time: 0
+          Value: -0.026656672
+          InTangent: 0
+          OutTangent: 0
+          Property: left Shoulder Front-Back
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.026656672
+          InTangent: 0
+          OutTangent: 0
+          Property: left Shoulder Front-Back
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: left Arm Down-Up
+        Keyframes:
+        - Time: 0
+          Value: 0.5008309
+          InTangent: 0
+          OutTangent: 0
+          Property: left Arm Down-Up
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.5008309
+          InTangent: 0
+          OutTangent: 0
+          Property: left Arm Down-Up
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: left Arm Front-Back
+        Keyframes:
+        - Time: 0
+          Value: 0.2945701
+          InTangent: 0
+          OutTangent: 0
+          Property: left Arm Front-Back
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.2945701
+          InTangent: 0
+          OutTangent: 0
+          Property: left Arm Front-Back
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: left Arm Twist In-Out
+        Keyframes:
+        - Time: 0
+          Value: -0.00094974384
+          InTangent: 0
+          OutTangent: 0
+          Property: left Arm Twist In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.00094974384
+          InTangent: 0
+          OutTangent: 0
+          Property: left Arm Twist In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: left Forearm Stretch
+        Keyframes:
+        - Time: 0
+          Value: 0.89037263
+          InTangent: 0
+          OutTangent: 0
+          Property: left Forearm Stretch
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.89037263
+          InTangent: 0
+          OutTangent: 0
+          Property: left Forearm Stretch
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: left Forearm Twist In-Out
+        Keyframes:
+        - Time: 0
+          Value: -0.0039196364
+          InTangent: 0
+          OutTangent: 0
+          Property: left Forearm Twist In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.0039196364
+          InTangent: 0
+          OutTangent: 0
+          Property: left Forearm Twist In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: left Hand Down-Up
+        Keyframes:
+        - Time: 0
+          Value: -0.00038705475
+          InTangent: 0
+          OutTangent: 0
+          Property: left Hand Down-Up
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.00038705475
+          InTangent: 0
+          OutTangent: 0
+          Property: left Hand Down-Up
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: left Hand In-Out
+        Keyframes:
+        - Time: 0
+          Value: 0.24678716
+          InTangent: 0
+          OutTangent: 0
+          Property: left Hand In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.24678716
+          InTangent: 0
+          OutTangent: 0
+          Property: left Hand In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: right Shoulder Down-Up
+        Keyframes:
+        - Time: 0
+          Value: -0.65770036
+          InTangent: 0
+          OutTangent: 0
+          Property: right Shoulder Down-Up
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.65770036
+          InTangent: 0
+          OutTangent: 0
+          Property: right Shoulder Down-Up
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: right Shoulder Front-Back
+        Keyframes:
+        - Time: 0
+          Value: -0.026655924
+          InTangent: 0
+          OutTangent: 0
+          Property: right Shoulder Front-Back
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.026655924
+          InTangent: 0
+          OutTangent: 0
+          Property: right Shoulder Front-Back
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: right Arm Down-Up
+        Keyframes:
+        - Time: 0
+          Value: 0.5008307
+          InTangent: 0
+          OutTangent: 0
+          Property: right Arm Down-Up
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.5008307
+          InTangent: 0
+          OutTangent: 0
+          Property: right Arm Down-Up
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: right Arm Front-Back
+        Keyframes:
+        - Time: 0
+          Value: 0.29456997
+          InTangent: 0
+          OutTangent: 0
+          Property: right Arm Front-Back
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.29456997
+          InTangent: 0
+          OutTangent: 0
+          Property: right Arm Front-Back
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: right Arm Twist In-Out
+        Keyframes:
+        - Time: 0
+          Value: -0.00094974646
+          InTangent: 0
+          OutTangent: 0
+          Property: right Arm Twist In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.00094974646
+          InTangent: 0
+          OutTangent: 0
+          Property: right Arm Twist In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: right Forearm Stretch
+        Keyframes:
+        - Time: 0
+          Value: 0.8903728
+          InTangent: 0
+          OutTangent: 0
+          Property: right Forearm Stretch
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.8903728
+          InTangent: 0
+          OutTangent: 0
+          Property: right Forearm Stretch
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: right Forearm Twist In-Out
+        Keyframes:
+        - Time: 0
+          Value: -0.0039196513
+          InTangent: 0
+          OutTangent: 0
+          Property: right Forearm Twist In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.0039196513
+          InTangent: 0
+          OutTangent: 0
+          Property: right Forearm Twist In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: right Hand Down-Up
+        Keyframes:
+        - Time: 0
+          Value: -0.00038712102
+          InTangent: 0
+          OutTangent: 0
+          Property: right Hand Down-Up
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.00038712102
+          InTangent: 0
+          OutTangent: 0
+          Property: right Hand Down-Up
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: right Hand In-Out
+        Keyframes:
+        - Time: 0
+          Value: 0.24678724
+          InTangent: 0
+          OutTangent: 0
+          Property: right Hand In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.24678724
+          InTangent: 0
+          OutTangent: 0
+          Property: right Hand In-Out
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftHand.Thumb.1 Stretched
+        Keyframes:
+        - Time: 0
+          Value: -0.7149313
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Thumb.1 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.7149313
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Thumb.1 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftHand.Thumb.Spread
+        Keyframes:
+        - Time: 0
+          Value: 0.37668565
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Thumb.Spread
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.37668565
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Thumb.Spread
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftHand.Thumb.2 Stretched
+        Keyframes:
+        - Time: 0
+          Value: 0.64628243
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Thumb.2 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.64628243
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Thumb.2 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftHand.Thumb.3 Stretched
+        Keyframes:
+        - Time: 0
+          Value: 0.64628184
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Thumb.3 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.64628184
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Thumb.3 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftHand.Index.1 Stretched
+        Keyframes:
+        - Time: 0
+          Value: 0.6679698
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Index.1 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.6679698
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Index.1 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftHand.Index.Spread
+        Keyframes:
+        - Time: 0
+          Value: -0.45739162
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Index.Spread
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.45739162
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Index.Spread
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftHand.Index.2 Stretched
+        Keyframes:
+        - Time: 0
+          Value: 0.8116838
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Index.2 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.8116838
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Index.2 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftHand.Index.3 Stretched
+        Keyframes:
+        - Time: 0
+          Value: 0.8116838
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Index.3 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.8116838
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Index.3 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftHand.Middle.1 Stretched
+        Keyframes:
+        - Time: 0
+          Value: 0.6679698
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Middle.1 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.6679698
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Middle.1 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftHand.Middle.Spread
+        Keyframes:
+        - Time: 0
+          Value: -0.61083114
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Middle.Spread
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.61083114
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Middle.Spread
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftHand.Middle.2 Stretched
+        Keyframes:
+        - Time: 0
+          Value: 0.8116842
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Middle.2 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.8116842
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Middle.2 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftHand.Middle.3 Stretched
+        Keyframes:
+        - Time: 0
+          Value: 0.8116842
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Middle.3 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.8116842
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Middle.3 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftHand.Ring.1 Stretched
+        Keyframes:
+        - Time: 0
+          Value: 0.66797
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Ring.1 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.66797
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Ring.1 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftHand.Ring.Spread
+        Keyframes:
+        - Time: 0
+          Value: -0.6108282
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Ring.Spread
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.6108282
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Ring.Spread
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftHand.Ring.2 Stretched
+        Keyframes:
+        - Time: 0
+          Value: 0.8116838
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Ring.2 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.8116838
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Ring.2 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftHand.Ring.3 Stretched
+        Keyframes:
+        - Time: 0
+          Value: 0.8116838
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Ring.3 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.8116838
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Ring.3 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftHand.Little.1 Stretched
+        Keyframes:
+        - Time: 0
+          Value: 0.6679698
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Little.1 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.6679698
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Little.1 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftHand.Little.Spread
+        Keyframes:
+        - Time: 0
+          Value: -0.45739284
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Little.Spread
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.45739284
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Little.Spread
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftHand.Little.2 Stretched
+        Keyframes:
+        - Time: 0
+          Value: 0.8116842
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Little.2 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.8116842
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Little.2 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: leftHand.Little.3 Stretched
+        Keyframes:
+        - Time: 0
+          Value: 0.8116842
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Little.3 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.8116842
+          InTangent: 0
+          OutTangent: 0
+          Property: leftHand.Little.3 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightHand.Thumb.1 Stretched
+        Keyframes:
+        - Time: 0
+          Value: -0.71493024
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Thumb.1 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.71493024
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Thumb.1 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightHand.Thumb.Spread
+        Keyframes:
+        - Time: 0
+          Value: 0.37669381
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Thumb.Spread
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.37669381
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Thumb.Spread
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightHand.Thumb.2 Stretched
+        Keyframes:
+        - Time: 0
+          Value: 0.6462818
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Thumb.2 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.6462818
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Thumb.2 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightHand.Thumb.3 Stretched
+        Keyframes:
+        - Time: 0
+          Value: 0.64628184
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Thumb.3 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.64628184
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Thumb.3 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightHand.Index.1 Stretched
+        Keyframes:
+        - Time: 0
+          Value: 0.6679698
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Index.1 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.6679698
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Index.1 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightHand.Index.Spread
+        Keyframes:
+        - Time: 0
+          Value: -0.45739165
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Index.Spread
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.45739165
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Index.Spread
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightHand.Index.2 Stretched
+        Keyframes:
+        - Time: 0
+          Value: 0.8116841
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Index.2 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.8116841
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Index.2 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightHand.Index.3 Stretched
+        Keyframes:
+        - Time: 0
+          Value: 0.8116841
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Index.3 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.8116841
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Index.3 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightHand.Middle.1 Stretched
+        Keyframes:
+        - Time: 0
+          Value: 0.6679698
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Middle.1 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.6679698
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Middle.1 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightHand.Middle.Spread
+        Keyframes:
+        - Time: 0
+          Value: -0.6108283
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Middle.Spread
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.6108283
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Middle.Spread
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightHand.Middle.2 Stretched
+        Keyframes:
+        - Time: 0
+          Value: 0.8116841
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Middle.2 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.8116841
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Middle.2 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightHand.Middle.3 Stretched
+        Keyframes:
+        - Time: 0
+          Value: 0.8116838
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Middle.3 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.8116838
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Middle.3 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightHand.Ring.1 Stretched
+        Keyframes:
+        - Time: 0
+          Value: 0.6679698
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Ring.1 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.6679698
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Ring.1 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightHand.Ring.Spread
+        Keyframes:
+        - Time: 0
+          Value: -0.61083126
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Ring.Spread
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.61083126
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Ring.Spread
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightHand.Ring.2 Stretched
+        Keyframes:
+        - Time: 0
+          Value: 0.8116841
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Ring.2 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.8116841
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Ring.2 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightHand.Ring.3 Stretched
+        Keyframes:
+        - Time: 0
+          Value: 0.8116841
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Ring.3 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.8116841
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Ring.3 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightHand.Little.1 Stretched
+        Keyframes:
+        - Time: 0
+          Value: 0.6679698
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Little.1 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.6679698
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Little.1 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightHand.Little.Spread
+        Keyframes:
+        - Time: 0
+          Value: -0.45739275
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Little.Spread
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: -0.45739275
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Little.Spread
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightHand.Little.2 Stretched
+        Keyframes:
+        - Time: 0
+          Value: 0.8116837
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Little.2 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.8116837
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Little.2 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: rightHand.Little.3 Stretched
+        Keyframes:
+        - Time: 0
+          Value: 0.8116841
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Little.3 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.033333335
+          Value: 0.8116841
+          InTangent: 0
+          OutTangent: 0
+          Property: rightHand.Little.3 Stretched
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+  Events: []

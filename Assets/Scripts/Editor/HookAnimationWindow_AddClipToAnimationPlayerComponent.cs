@@ -36,8 +36,11 @@ public static class HookAnimationWindow_AddClipToAnimationPlayerComponent
                 return (bool)type.GetMethod("AddClipToAnimationComponent", BindingFlags.Static | BindingFlags.Public)
                     .Invoke(null, new object[] { animationPlayer as Animation, newClip });
             case BetterAnimation _:
-                var ba = animationPlayer as BetterAnimation;
-                typeof(BetterAnimation).GetMethod("AddClip",BindingFlags.Instance | BindingFlags.NonPublic)?.Invoke(ba, new object[] { newClip });
+                var obj = new SerializedObject(animationPlayer);
+                var animationClip = obj.FindProperty("AnimationClip");
+                animationClip.arraySize += 1;
+                animationClip.GetArrayElementAtIndex(animationClip.arraySize - 1).objectReferenceValue = newClip;
+                obj.ApplyModifiedProperties();
                 return true;
             default:
                 return false;

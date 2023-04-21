@@ -10,46 +10,17 @@ public class BetterAnimation : MonoBehaviour, IAnimationClipSource
     [SerializeField] private List<AnimationClip> AnimationClip = new List<AnimationClip>();
     [SerializeField] private KeyframeDataWrapper[] AnimateProto = Array.Empty<KeyframeDataWrapper>();
 
-    private void AddClip(AnimationClip clip)
-    {
-        AnimationClip.Add(clip);
-    }
-
     public void GetAnimationClips(List<AnimationClip> results)
     {
         results.AddRange(AnimationClip);
     }
-
-#if UNITY_EDITOR
-    void OnValidate()
-    {
-        HashSet<AnimationClip> clips = new HashSet<AnimationClip>(AnimationClip);
-        var animator = GetComponent<Animator>();
-        if (animator != null)
-        { 
-            foreach(var node in animator.runtimeAnimatorController.animationClips)
-            {
-                clips.Add(node);
-            }
-        }
-
-        var legacyAnimation = GetComponent<Animation>();
-        if (legacyAnimation != null)
-        {
-            foreach(AnimationClip node in legacyAnimation)
-                clips.Add(node);
-        }
-
-        AnimationClip = clips.ToList();
-    }
-#endif
 
     public void StopAnimation()
     {
         
     }
 
-    public AnimationBuilder Build(string animationName)
+    public AnimationBuilder DoJob(string animationName)
     {
         KeyframeDataWrapper keyframeData = null;
         for (var index = 0; index < AnimateProto.Length; index++)
@@ -66,7 +37,7 @@ public class BetterAnimation : MonoBehaviour, IAnimationClipSource
             throw new Exception($"动画{animationName}不存在");
         }
 
-        var sequence = DOTween.Sequence();
+        var sequence = DOTween.Sequence(this);
         foreach (var node in keyframeData.Objects)
         {
             var obj = node.ObjectKey != "" ? transform.Find(node.ObjectKey) : transform;
@@ -100,16 +71,38 @@ public class BetterAnimation : MonoBehaviour, IAnimationClipSource
         {
             sequence.InsertCallback(node.Time, () =>
             {
-                if (builder.Events.TryGetValue(node.EvtName, out var list))
+                var list = builder.GetEvent(node.EvtName);
+                foreach (var action in list)
                 {
-                    foreach (var action in list)
-                    {
-                        action(builder);
-                    }
+                    action(builder);
                 }
             });
         }
 
         return builder;
     }
+    
+#if UNITY_EDITOR
+    void OnValidate()
+    {
+        HashSet<AnimationClip> clips = new HashSet<AnimationClip>(AnimationClip);
+        var animator = GetComponent<Animator>();
+        if (animator != null)
+        { 
+            foreach(var node in animator.runtimeAnimatorController.animationClips)
+            {
+                clips.Add(node);
+            }
+        }
+
+        var legacyAnimation = GetComponent<Animation>();
+        if (legacyAnimation != null)
+        {
+            foreach(AnimationClip node in legacyAnimation)
+                clips.Add(node);
+        }
+
+        AnimationClip = clips.ToList();
+    }
+#endif
 }

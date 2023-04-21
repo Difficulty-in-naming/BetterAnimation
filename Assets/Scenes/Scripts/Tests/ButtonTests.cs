@@ -9,25 +9,25 @@ public class ButtonTests : MonoBehaviour,IPointerEnterHandler,IPointerDownHandle
     void Start()
     {
         mBetterAnimation = GetComponent<BetterAnimation>();
-        NormalAnimation = mBetterAnimation.Build("ButtonNormal").SetLoops(-1).PlayForward();
+        NormalAnimation = mBetterAnimation.DoJob("ButtonNormal").SetLoops(-1);
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
         NormalAnimation.Kill();
-        HoverAnimation = mBetterAnimation.Build("ButtonHighlighted").PlayForward();
+        HoverAnimation = mBetterAnimation.DoJob("ButtonHighlighted");
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
         NormalAnimation.Kill();
         HoverAnimation.Kill();
-        mBetterAnimation.Build("ButtonPressed").PlayForward();
+        mBetterAnimation.DoJob("ButtonPressed");
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         HoverAnimation.Kill();
-        NormalAnimation = mBetterAnimation.Build("ButtonNormal").SetLoops(-1).PlayForward();
+        NormalAnimation = mBetterAnimation.DoJob("ButtonNormal").SetLoops(-1);
     }
 }

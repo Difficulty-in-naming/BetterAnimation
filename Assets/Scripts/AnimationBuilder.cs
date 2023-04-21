@@ -4,14 +4,62 @@ using DG.Tweening;
 
 public class AnimationBuilder
 {
-    public Sequence Sequence;
-    public Dictionary<string, List<Action<AnimationBuilder>>> Events = new Dictionary<string, List<Action<AnimationBuilder>>>();
-    public object Target;
-    public int Id;
-    public Action<AnimationBuilder> onStart;
-    public Action<AnimationBuilder> onComplete;
+    private Sequence mSequence;
+    private Dictionary<string, List<Action<AnimationBuilder>>> mEvents = new Dictionary<string, List<Action<AnimationBuilder>>>();
+    private int mId;
+    
     public AnimationBuilder(Sequence sequence)
     {
-        Sequence = sequence;
+        mSequence = sequence;
+    }
+
+    public List<Action<AnimationBuilder>> GetEvent(string eventName)
+    {
+        if (mEvents.TryGetValue(eventName, out var value))
+        {
+            return value;
+        }
+
+        return new List<Action<AnimationBuilder>>();
+    }
+    
+    public AnimationBuilder OnStart(Action<AnimationBuilder> action)
+    {
+        mSequence.OnStart(() => action(this));
+        return this;
+    }
+    
+    public AnimationBuilder OnComplete(Action<AnimationBuilder> action)
+    {
+        mSequence.OnComplete(() => action(this));
+        return this;
+    }
+
+    public AnimationBuilder OnEvent(string evtName, Action<AnimationBuilder> action)
+    {
+        if (!mEvents.TryGetValue(evtName, out var list))
+        {
+            mEvents.Add(evtName,list = new List<Action<AnimationBuilder>>());
+        }
+        list.Add(action);
+        return this;
+    }
+    
+    public AnimationBuilder SetLoops(int loop)
+    {
+        mSequence.SetLoops(loop);
+        return this;
+    }
+
+    public AnimationBuilder Flip()
+    {
+        mSequence.SetInverted();
+        mSequence.PlayForward();
+        return this;
+    }
+
+    public void Kill(bool complete = false)
+    {
+        mSequence.Kill(complete);
     }
 }

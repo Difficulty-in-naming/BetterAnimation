@@ -39,8 +39,9 @@ public static class BetterAnimationUtility
 
     public static void ReGenerateConfig(BetterAnimation target)
     {
-        var serializedAnimationClipAccessor = new SerializedObject(target).FindProperty("AnimationClip");
-        var serializedAnimateProtoAccessor = new SerializedObject(target).FindProperty("AnimateProto");
+        var serializedObject = new SerializedObject(target);
+        var serializedAnimationClipAccessor = serializedObject.FindProperty("AnimationClip");
+        var serializedAnimateProtoAccessor = serializedObject.FindProperty("AnimateProto");
         var count = serializedAnimationClipAccessor.arraySize;
         var animateProto = new KeyframeDataWrapper[count];
         for (var index = 0; index < count; index++)
@@ -53,7 +54,7 @@ public static class BetterAnimationUtility
         {
             serializedAnimateProtoAccessor.GetArrayElementAtIndex(index).objectReferenceValue = animateProto[index];
         }
-        serializedAnimateProtoAccessor.serializedObject.ApplyModifiedProperties();
+        serializedObject.ApplyModifiedProperties();
     }
 
     public static KeyframeDataWrapper GenerateAnimationAsset(AnimationClip clip)
@@ -141,7 +142,11 @@ public static class BetterAnimationUtility
     {
         string path = AssetDatabase.GetAssetPath(node);
         path = Path.ChangeExtension(path, null);
-        var dir = Path.GetDirectoryName(path)?.Substring("Assets".Length + 1) ?? "";
+        var dir = Path.GetDirectoryName(path);
+        if (dir != "Assets")
+        {
+            dir = dir?.Substring("Assets".Length + 1) ?? "";
+        }
         CreateFolder(dir);
         var file = Path.Combine(BetterAnimationConfig.Instance.GenerateBetterAnimationConfigPath, dir + Path.DirectorySeparatorChar + Path.GetFileName(path) + ".asset");
         AssetDatabase.CreateAsset(scriptableObject, file);
