@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using DG.Tweening;
+using UnityEngine;
 
 public class AnimationBuilder
 {
@@ -62,4 +64,25 @@ public class AnimationBuilder
     {
         mSequence.Kill(complete);
     }
+
+    public AnimationBuilder Play(bool unscaledTime = false)
+    {
+        mSequence.PlayForward();
+        mSequence.ManualUpdate(Time.deltaTime, unscaledTime ? Time.unscaledDeltaTime : 0);
+        return this;
+    }
+    
+    #if HAS_UNITASK
+    public async Cysharp.Threading.Tasks.UniTask AwaitComplete()
+    {
+        await Cysharp.Threading.Tasks.DOTweenAsyncExtensions.GetAwaiter(mSequence);
+    }
+    #else
+    public async Task AwaitComplete()
+    {
+        var tcs = new TaskCompletionSource<bool>();
+        mSequence.OnComplete(() => tcs.TrySetResult(true));
+        await tcs.Task;
+    }
+    #endif
 }

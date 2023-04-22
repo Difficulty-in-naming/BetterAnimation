@@ -140,6 +140,12 @@ public static class BetterAnimationUtility
 
     private static KeyframeDataWrapper CreateBetterAnimationAssets(AnimationClip node, KeyframeDataWrapper scriptableObject)
     {
+        if (!Directory.Exists(BetterAnimationConfig.Instance.GenerateBetterAnimationConfigPath))
+        {
+            Directory.CreateDirectory(BetterAnimationConfig.Instance.GenerateBetterAnimationConfigPath);
+            AssetDatabase.SaveAssets();
+            AssetDatabase.Refresh();
+        }
         string path = AssetDatabase.GetAssetPath(node);
         path = Path.ChangeExtension(path, null);
         var dir = Path.GetDirectoryName(path);
@@ -184,7 +190,7 @@ public static class BetterAnimationUtility
             EditorCurveBinding[] bindings = AnimationUtility.GetCurveBindings(clip);
             foreach (var curve in bindings)
             {
-                string propertyName = "";
+                string propertyName = curve.propertyName;
                 if (curve.type == typeof(Animator))
                     continue;
                 if (curve.type?.Namespace?.StartsWith("UnityEngine") ?? false)

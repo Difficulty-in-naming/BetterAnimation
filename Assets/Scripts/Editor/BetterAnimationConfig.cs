@@ -71,7 +71,7 @@ public class BetterAnimationConfigSettingsProvider : SettingsProvider
     {
         if (mBetterAnimationConfig == null)
         {
-            EditorGUILayout.HelpBox("Better Animation Config is not available", MessageType.Error);
+            EditorGUILayout.HelpBox("Better Animation Config is not available", UnityEditor.MessageType.Error);
             return;
         }
 

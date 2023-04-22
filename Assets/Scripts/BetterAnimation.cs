@@ -81,28 +81,4 @@ public class BetterAnimation : MonoBehaviour, IAnimationClipSource
 
         return builder;
     }
-    
-#if UNITY_EDITOR
-    void OnValidate()
-    {
-        HashSet<AnimationClip> clips = new HashSet<AnimationClip>(AnimationClip);
-        var animator = GetComponent<Animator>();
-        if (animator != null)
-        { 
-            foreach(var node in animator.runtimeAnimatorController.animationClips)
-            {
-                clips.Add(node);
-            }
-        }
-
-        var legacyAnimation = GetComponent<Animation>();
-        if (legacyAnimation != null)
-        {
-            foreach(AnimationClip node in legacyAnimation)
-                clips.Add(node);
-        }
-
-        AnimationClip = clips.ToList();
-    }
-#endif
 }

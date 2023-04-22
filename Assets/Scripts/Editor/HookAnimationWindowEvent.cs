@@ -12,6 +12,7 @@ public static class HookAnimationWindowEvent
 
     static HookAnimationWindowEvent()
     {
+        
         Type type = Type.GetType("UnityEditor.AnimationWindowEventInspector,UnityEditor.dll");
         MethodInfo miTarget = type.GetMethod("OnEditAnimationEvents", BindingFlags.Static | BindingFlags.Public);
 
@@ -28,12 +29,28 @@ public static class HookAnimationWindowEvent
     {
         Type type = Type.GetType("UnityEditor.AnimationWindowEventInspector,UnityEditor.dll");
         var method = type.GetMethod("GetData", BindingFlags.Static | BindingFlags.NonPublic);
-        var value = method.Invoke(null, new object[]{obj});
-        method = type.GetMethod("DoEditRegularParameters", BindingFlags.Static | BindingFlags.NonPublic);
-        var selectedEvents = value.GetType().GetField("selectedEvents").GetValue(value);
-        method.Invoke(null,new object[]{selectedEvents,typeof(string)});
-        method = type.GetMethod("SetData", BindingFlags.Static | BindingFlags.NonPublic);
-        method.Invoke(null, new object[] { obj, value });
+        var data = method.Invoke(null, new object[]{obj});
+        var animationWindowEventType = data.GetType();
+        var root = animationWindowEventType.GetField("root").GetValue(data);
+        if (root is GameObject go)
+        {
+            if (go.TryGetComponent(typeof(BetterAnimation), out var betterAnimation))
+            {
+                method = type.GetMethod("DoEditRegularParameters", BindingFlags.Static | BindingFlags.NonPublic);
+                var selectedEvents = animationWindowEventType.GetField("selectedEvents").GetValue(data);
+                method.Invoke(null,new object[]{selectedEvents,typeof(string)});
+                method = type.GetMethod("SetData", BindingFlags.Static | BindingFlags.NonPublic);
+                method.Invoke(null, new object[] { obj, data });
+            }
+            else
+            {
+                mHook.proxyMethod.Invoke(null,new object[]{obj});
+            }
+        }
+        else
+        {
+            mHook.proxyMethod.Invoke(null,new object[]{obj});
+        }
     }
     
     [MethodImpl(MethodImplOptions.NoOptimization)]

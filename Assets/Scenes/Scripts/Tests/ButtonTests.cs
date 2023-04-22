@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ButtonTests : MonoBehaviour,IPointerEnterHandler,IPointerDownHandler,IPointerExitHandler
+public class ButtonTests : MonoBehaviour,IPointerEnterHandler,IPointerDownHandler,IPointerExitHandler,IPointerUpHandler
 {
     private BetterAnimation mBetterAnimation;
     private AnimationBuilder NormalAnimation;
@@ -29,5 +29,10 @@ public class ButtonTests : MonoBehaviour,IPointerEnterHandler,IPointerDownHandle
     {
         HoverAnimation.Kill();
         NormalAnimation = mBetterAnimation.DoJob("ButtonNormal").SetLoops(-1);
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        mBetterAnimation.DoJob("ButtonPressed").Flip();
     }
 }
