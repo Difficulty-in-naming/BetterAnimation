@@ -25,6 +25,9 @@ BetterAnimation 是一个用于将 Unity 的 AnimationClip 转换为 DOTween 代
 1. 支持 DOTS 代码，适用于高性能、高优化的环境。
 2. 支持 Generic 动画
 3. 支持Transition
+4. 将Tween功能抽象出来.
+5. 重构和整理代码
+6. 提供更多可用的低级API
 
 ## 使用方法
 
