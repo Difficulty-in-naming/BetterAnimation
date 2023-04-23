@@ -1,8 +1,8 @@
-# BetterAnimation
+# 🎉 BetterAnimation
 
 BetterAnimation 是一个用于将 Unity 的 AnimationClip 转换为 DOTween 代码的插件，解决了 Animation 和 Animator 的许多缺点。它可以帮助开发者在 Unity 中更轻松地创建和管理UI动画。
 
-## 优势
+## 🌟 优势
 
 相较于传统的 Unity Animation 和 Animator，BetterAnimation 提供了以下优势：
 
@@ -21,22 +21,25 @@ BetterAnimation 是一个用于将 Unity 的 AnimationClip 转换为 DOTween 代
 13. 对代码调试更友好，便于查看相关数据。
 14. 可控的生命周期以及执行周期
 
-## Roadmap
+## 🚀 Roadmap
+
 1. 支持 DOTS 代码，适用于高性能、高优化的环境。
 2. 支持 Generic 动画
 3. 支持Transition
 4. 将Tween功能抽象出来.
 5. 重构和整理代码
 6. 提供更多可用的低级API
+7. 补充更多复杂的单元测试用例
+8. 补充Benchmark测试
 
-## 使用方法
+## 📚 使用方法
 
 1. 将 `BetterAnimation` 脚本添加到您希望使用的游戏对象上。
-2. 打开ProjectStteing找到Better Animation Config 修改 AOT代码路径和动画序列化文件路径
+2. 打开`ProjectStteing`找到`Better Animation Config`修改 AOT代码路径和动画序列化文件路径
 3. 在 Unity 编辑器中，将所需的 AnimationClip 添加到 `BetterAnimation` 组件中的 AnimationClip 列表中。
 4. 在脚本中调用 `DoJob(animationName)` 方法，该方法将返回一个 `AnimationBuilder` 对象，用于配置和播放动画。
 
-## 示例
+## 🌠 示例
 
 以下是 BetterAnimation 的一个基本示例：
 
@@ -55,10 +58,11 @@ public class BetterAnimationExample : MonoBehaviour
 }
 ```
 
-## 注意
+## ⚠️ 注意
 
 该插件对 **Unity 的 Animation Window** 进行了钩子操作。您也可以选择不使用钩子，但这可能会导致您失去以下特性：
 
 1. **无法直接编辑帧事件**：使用钩子功能允许您直接编辑帧事件，否则这将无法实现。
 2. **组件兼容性**：在使用 BetterAnimation 的组件时，仍然需要挂载 Animation/Animator 组件，否则 Animation Window 无法检测到 Animation Clip。
 3. **手动操作 Animation Clip**：在创建 Animation Clip 后，您需要手动将其拖动到 BetterAnimation 组件中。
+
