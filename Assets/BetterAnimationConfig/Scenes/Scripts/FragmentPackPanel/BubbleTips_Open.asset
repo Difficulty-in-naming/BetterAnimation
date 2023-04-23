@@ -1,0 +1,173 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7363976da4d463b92277c69464dea4a, type: 3}
+  m_Name: BubbleTips_Open
+  m_EditorClassIdentifier: 
+  AnimationName: BubbleTips_Open
+  Objects:
+  - ObjectKey: 
+    Types:
+    - Type:
+        TypeName: UnityEngine.RectTransform, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      Properties:
+      - PropertyName: localScale.x
+        Keyframes:
+        - Time: 0
+          Value: 0
+          InTangent: 12.967994
+          OutTangent: 12.967994
+          Property: localScale.x
+          InWeight: 0.33333334
+          OutWeight: 0.27506536
+          Path: 
+          Type:
+            TypeName: UnityEngine.RectTransform, UnityEngine.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.13333334
+          Value: 1.2
+          InTangent: 0
+          OutTangent: 0
+          Property: localScale.x
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.RectTransform, UnityEngine.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.3
+          Value: 0.9
+          InTangent: 0
+          OutTangent: 0
+          Property: localScale.x
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.RectTransform, UnityEngine.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.5
+          Value: 1
+          InTangent: 0
+          OutTangent: 0
+          Property: localScale.x
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.RectTransform, UnityEngine.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: localScale.y
+        Keyframes:
+        - Time: 0
+          Value: 0
+          InTangent: 12.973651
+          OutTangent: 12.973651
+          Property: localScale.y
+          InWeight: 0.33333334
+          OutWeight: 0.22851585
+          Path: 
+          Type:
+            TypeName: UnityEngine.RectTransform, UnityEngine.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.13333334
+          Value: 1.2
+          InTangent: 0
+          OutTangent: 0
+          Property: localScale.y
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.RectTransform, UnityEngine.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.3
+          Value: 0.9
+          InTangent: 0
+          OutTangent: 0
+          Property: localScale.y
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.RectTransform, UnityEngine.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.5
+          Value: 1
+          InTangent: 0
+          OutTangent: 0
+          Property: localScale.y
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.RectTransform, UnityEngine.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+      - PropertyName: localScale.z
+        Keyframes:
+        - Time: 0
+          Value: 0
+          InTangent: 12.872804
+          OutTangent: 12.872804
+          Property: localScale.z
+          InWeight: 0.33333334
+          OutWeight: 0.21158874
+          Path: 
+          Type:
+            TypeName: UnityEngine.RectTransform, UnityEngine.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.13333334
+          Value: 1.2
+          InTangent: 0
+          OutTangent: 0
+          Property: localScale.z
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.RectTransform, UnityEngine.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.3
+          Value: 0.9
+          InTangent: 0
+          OutTangent: 0
+          Property: localScale.z
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.RectTransform, UnityEngine.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+        - Time: 0.5
+          Value: 1
+          InTangent: 0
+          OutTangent: 0
+          Property: localScale.z
+          InWeight: 0.33333334
+          OutWeight: 0.33333334
+          Path: 
+          Type:
+            TypeName: UnityEngine.RectTransform, UnityEngine.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          ObjectKeyPair: 
+  Events: []

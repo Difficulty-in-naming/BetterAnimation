@@ -221,21 +221,13 @@ public static class BetterAnimationUtility
                 var propertySetGetClass = new Class(className);
                 propertySetGetClass.AddVariable(new Variable("mInstance", key.Type.FullName) { Modifier = AccessModifier.Private });
                 propertySetGetClass.AddVariable(new Variable("mValue", "float") { Modifier = AccessModifier.Private });
-                Method getMethod;
                 var fieldType = GetFieldType(key.Type, key.Property);
                 if (key.Property == "isActive" && key.Type == typeof(GameObject))
                 {
                     fieldType = (false, typeof(bool));
                 }
 
-                if (key.Property == "isActive" && key.Type == typeof(GameObject))
-                {
-                    getMethod = new Method("Get", fieldType.currentType.FullName, "return mValue;");
-                }
-                else
-                {
-                    getMethod = new Method("Get", fieldType.currentType.FullName, "return mValue;");
-                }
+                var getMethod = new Method("Get", "float", "return mValue;");
 
                 Method setMethod;
                 if (fieldType.isStruct && fieldType.currentType != typeof(bool))
@@ -265,25 +257,13 @@ public static class BetterAnimationUtility
                     }
                 }
 
-                getMethod.ReturnType = fieldType.currentType.FullName;
-                setMethod.AddParameter(new Parameter("value", fieldType.currentType.FullName));
+                getMethod.ReturnType = "float";
+                setMethod.AddParameter(new Parameter("value", "float"));
                 var constructor = new Method(className, "", $"mInstance = ({key.Type.FullName})value;");
                 constructor.AddParameter(new Parameter("value", "object"));
-                Method tweenMethod;
-                if (fieldType.currentType == typeof(bool))
-                {
-                    tweenMethod = new Method("GetTween", "DG.Tweening.Tween",
-                        $"mValue = 0;" +
-                        $"return DG.Tweening.DOTween.To(()=>Get() ? 1 : 0,(t1)=>Set(t1 == 1),endValue ? 1 : 0,duration);");
-                    tweenMethod.AddParameter(new Parameter("endValue", fieldType.currentType.FullName));
-                }
-                else
-                {
-                    tweenMethod = new Method("GetTween", "DG.Tweening.Tween", $"mValue = 0;" +
+                var tweenMethod = new Method("GetTween", "DG.Tweening.Tween", $"mValue = 0;" +
                                                                               $"return DG.Tweening.DOTween.To(Get,Set,endValue,duration);");
-                    tweenMethod.AddParameter(new Parameter("endValue", fieldType.currentType.FullName));
-                }
-
+                tweenMethod.AddParameter(new Parameter("endValue", "float"));
                 tweenMethod.AddParameter(new Parameter("duration", "float"));
                 propertySetGetClass.AddMethod(constructor);
                 propertySetGetClass.AddMethod(getMethod);
@@ -301,7 +281,7 @@ public static class BetterAnimationUtility
                                 "{";
         foreach (var type in allClasses)
         {
-            variable.DefaultValue += $"{{\"{type.Key}\",(t1,t2,t3)=> new {type.Key}(t1).GetTween(({type.Value.Methods[1].ReturnType})t2,t3)}},";
+            variable.DefaultValue += $"{{\"{type.Key}\",(t1,t2,t3)=> new {type.Key}(t1).GetTween(t2,t3)}},";
         }
 
         variable.DefaultValue += "}";

@@ -31,6 +31,7 @@ BetterAnimation 是一个用于将 Unity 的 AnimationClip 转换为 DOTween 代
 6. 提供更多可用的低级API
 7. 补充更多复杂的单元测试用例
 8. 补充Benchmark测试
+9. 增加对Object序列帧的支持
 
 ## 📚 使用方法
 

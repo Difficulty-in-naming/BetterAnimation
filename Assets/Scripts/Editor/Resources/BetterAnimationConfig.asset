@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: BetterAnimationConfig
   m_EditorClassIdentifier: 
   GenerateBetterAnimationConfigPath: Assets/BetterAnimationConfig
-  GenerateAotPath: Assets/Scripts
+  GenerateAotPath: Assets/Scripts/Generated
