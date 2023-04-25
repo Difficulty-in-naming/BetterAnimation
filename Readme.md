@@ -67,3 +67,8 @@ public class BetterAnimationExample : MonoBehaviour
 2. **组件兼容性**：在使用 BetterAnimation 的组件时，仍然需要挂载 Animation/Animator 组件，否则 Animation Window 无法检测到 Animation Clip。
 3. **手动操作 Animation Clip**：在创建 Animation Clip 后，您需要手动将其拖动到 BetterAnimation 组件中。
 
+## ❓ FAQ
+
+### 为什么 BetterAnimation 比 Animator 更快？
+
+Animator 会在每一帧都修改它们的元素，即使动画中的值并没有改变。Animator 没有无操作的检查。具体可以参考[官方回答](https://create.unity.com/Unity-UI-optimization-tips#6)。
