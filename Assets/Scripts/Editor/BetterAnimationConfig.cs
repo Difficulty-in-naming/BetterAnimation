@@ -4,9 +4,12 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
+
 [Serializable]
 public class BetterAnimationConfig : ScriptableObject
 {
+    [Serializable]
+    public class StringPair : SerializedDictionary<string, string> { }
     private static BetterAnimationConfig mInstance;
 
     public static BetterAnimationConfig Instance
@@ -18,6 +21,8 @@ public class BetterAnimationConfig : ScriptableObject
     }
     public string GenerateBetterAnimationConfigPath = "Assets/BetterAnimationConfig";
     public string GenerateAotPath = "Assets/Scripts";
+    public StringPair CodeMap = new StringPair();
+
 }
 
 [CustomEditor(typeof(BetterAnimationConfig))]
@@ -81,6 +86,8 @@ public class BetterAnimationConfigSettingsProvider : SettingsProvider
         EditorGUILayout.BeginVertical();
 
         EditorGUILayout.BeginHorizontal();
+        float labelWidth = EditorGUIUtility.labelWidth;
+        EditorGUIUtility.labelWidth = 230; // 调整标签的长度
         EditorGUILayout.PropertyField(mBetterAnimationConfig.FindProperty("GenerateBetterAnimationConfigPath"), new GUIContent("  Generate Better Animation Config Path"));
         if (GUILayout.Button("Select Folder", GUILayout.Width(100)))
         {
@@ -94,10 +101,10 @@ public class BetterAnimationConfigSettingsProvider : SettingsProvider
         EditorGUILayout.EndHorizontal();
 
         EditorGUILayout.BeginHorizontal();
-        EditorGUILayout.PropertyField(mBetterAnimationConfig.FindProperty("GenerateAotPath"), new GUIContent("  Generate AOT Path"));
+        EditorGUILayout.PropertyField(mBetterAnimationConfig.FindProperty("GenerateAotPath"), new GUIContent("  Generate AOT Code Path"));
         if (GUILayout.Button("Select Folder", GUILayout.Width(100)))
         {
-            string folderPath = EditorUtility.OpenFolderPanel("Select AOT Path", "", "");
+            string folderPath = EditorUtility.OpenFolderPanel("Select AOT Code Path", "", "");
             if (!string.IsNullOrEmpty(folderPath))
             {
                 string assetsPath = Application.dataPath;
@@ -107,7 +114,10 @@ public class BetterAnimationConfigSettingsProvider : SettingsProvider
         EditorGUILayout.EndHorizontal();
 
         EditorGUILayout.EndVertical();
+        EditorGUIUtility.labelWidth = labelWidth; // 调整标签的长度
 
+        EditorGUILayout.PropertyField(mBetterAnimationConfig.FindProperty("CodeMap"));
+        
         mBetterAnimationConfig.ApplyModifiedProperties();
     }
 }

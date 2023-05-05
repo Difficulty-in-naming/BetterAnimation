@@ -20,7 +20,7 @@ public class CodeGenerator
         foreach (var variable in classObj.Variables)
         {
             code.AppendLine(
-                $"{GetIndent(indentLevel + 1)}{variable.Modifier.ToString().ToLower()} {variable.Defined?.ToString().ToLower() ?? ""} {variable.Type} {variable.Name} {(variable.DefaultValue != null ? $"= {variable.DefaultValue}" : "")};");
+                $"{GetIndent(indentLevel + 1)}{variable.Modifier.ToString().ToLower()}{(variable.Defined != null ? " " + variable.Defined.ToString().ToLower() : "")} {variable.Type} {variable.Name}{(variable.DefaultValue != null ? $" = {variable.DefaultValue}" : "")};");
         }
 
         foreach (var method in classObj.Methods)
@@ -33,7 +33,7 @@ public class CodeGenerator
             code.Append(GenerateCode(nestedClass, indentLevel + 1));
         }
 
-        code.AppendLine($"{GetIndent(indentLevel)}}}");
+        code.AppendLine($"{GetIndent(indentLevel)}}}\n");
 
         return code;
     }
@@ -41,7 +41,7 @@ public class CodeGenerator
     private void GenerateClassDeclaration(Class classObj, StringBuilder code, int indentLevel)
     {
         code.AppendLine(
-            $"{GetIndent(indentLevel)}{classObj.Attribute.Modifier.ToString().ToLower()} {classObj.Attribute.Type?.ToString().ToLower()} class {classObj.ClassName}");
+            $"{GetIndent(indentLevel)}{classObj.Attribute.Modifier.ToString().ToLower()}{(classObj.Attribute.Type != null ? " " + classObj.Attribute.Type.ToString().ToLower() : "")} class {classObj.ClassName}");
         bool isAppend = false;
         if (!string.IsNullOrEmpty(classObj.Attribute.BaseClass))
         {
@@ -69,7 +69,7 @@ public class CodeGenerator
     {
         code.AppendLine();
         code.AppendLine(
-            $"{GetIndent(indentLevel)}{method.Attribute.Modifier.ToString().ToLower()} {method.Attribute.Defined?.ToString().ToLower() ?? ""} {method.ReturnType} {method.Name}({string.Join(", ", GenerateParameters(method.Parameters))})");
+            $"{GetIndent(indentLevel)}{method.Attribute.Modifier.ToString().ToLower()}{(method.Attribute.Defined != null ? " " + method.Attribute.Defined.ToString().ToLower() : "")}{(string.IsNullOrEmpty(method.ReturnType) ? "" : " " + method.ReturnType)} {method.Name}({string.Join(", ", GenerateParameters(method.Parameters))})");
         code.AppendLine($"{GetIndent(indentLevel)}{{");
         code.Append(GenerateMethodBody(method, indentLevel + 1));
         code.AppendLine($"{GetIndent(indentLevel)}}}");

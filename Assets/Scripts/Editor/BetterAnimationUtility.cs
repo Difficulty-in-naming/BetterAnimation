@@ -83,11 +83,7 @@ public static class BetterAnimationUtility
                     Path = binding.path,
                     Type = new SerializableType(binding.type),
                 };
-                if (binding.type?.Namespace?.StartsWith("UnityEngine") ?? false)
-                {
-                    data.Property = data.Property.Replace("m_", "");
-                    data.Property = data.Property.Substring(0, 1).ToLower() + data.Property.Substring(1);
-                }
+                MapProperty(binding.type, ref data.Property);
 
                 var value = keyframeDataList.Find(t1 => t1.ObjectKey == binding.path);
                 if (value == null)
@@ -138,6 +134,75 @@ public static class BetterAnimationUtility
         return asset;
     }
 
+    private static string GetVariableName(string input)
+    {
+        string[] parts = input.Split('.');
+        if (parts.Length == 0)
+        {
+            return input;
+        }
+        if (parts.Length - 2 >= 0 && parts.Length - 2 < parts.Length)
+        {
+            string result = parts[parts.Length - 2];
+            return result;
+        }
+        return parts[parts.Length - 1];
+    }
+    
+    private static string ReplaceVariableName(string input,string replacement)
+    {
+        string[] parts = input.Split('.');
+        int index = parts.Length - 2;
+        if (parts.Length == 0)
+        {
+            return replacement;
+        }
+        if (parts.Length - 2 >= 0 && parts.Length - 2 < parts.Length)
+        {
+            parts[index] = replacement;
+        }
+        else
+        {
+            parts[parts.Length - 1] = replacement;
+        }
+        string result = string.Join(".", parts);
+        return result;
+    }
+
+    private static void MapProperty(Type type,ref string property)
+    {
+        if (GenerateClassConfig.ReplaceProperty.TryGetValue(type, out var map))
+        {
+            var key = GetVariableName(property);
+            if(map.TryGetValue(key,out var value))
+            {
+                property = ReplaceVariableName(property, value);
+                return;
+            }
+        }
+        
+        if (type.Namespace?.StartsWith("UnityEngine") ?? false)
+        {
+            property = property.Replace("m_", "");
+            property = property.Substring(0, 1).ToLower() + property.Substring(1);
+        }
+                
+        if (type.Namespace?.StartsWith("UnityEngine") ?? false)
+        {
+            property = property.Replace("m_", "");
+            property = property.Substring(0, 1).ToLower() + property.Substring(1);
+            if (property.Contains("Raw."))
+                property = property.Replace("Raw.", ".");
+        }
+        if (typeof(Component).IsAssignableFrom(type))
+        {
+            if (property == "m_Enabled")
+            {
+                property = "enabled";
+            }
+        }
+    }
+    
     private static KeyframeDataWrapper CreateBetterAnimationAssets(AnimationClip node, KeyframeDataWrapper scriptableObject)
     {
         if (!Directory.Exists(BetterAnimationConfig.Instance.GenerateBetterAnimationConfigPath))
@@ -191,16 +256,10 @@ public static class BetterAnimationUtility
             foreach (var curve in bindings)
             {
                 string propertyName = curve.propertyName;
-                if (curve.type == typeof(Animator))
+                if (!GenerateClassConfig.Ignore(curve.type,propertyName))
                     continue;
-                if (curve.type?.Namespace?.StartsWith("UnityEngine") ?? false)
-                {
-                    propertyName = curve.propertyName.Replace("m_", "");
-                    propertyName = propertyName.Substring(0, 1).ToLower() + propertyName.Substring(1);
-                    if (propertyName.Contains("Raw."))
-                        propertyName = propertyName.Replace("Raw.", ".");
-                }
 
+                MapProperty(curve.type, ref propertyName);
                 hashSet.Add(new TypeGenerator(propertyName, curve.type));
             }
         }
@@ -211,7 +270,15 @@ public static class BetterAnimationUtility
     private static void WriteAotCode(HashSet<TypeGenerator> hashSet)
     {
         Dictionary<string, Class> allClasses = new Dictionary<string, Class>();
-        StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder(@"// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable CheckNamespace
+// ReSharper disable InconsistentNaming
+// ReSharper disable FieldCanBeMadeReadOnly.Local
+// ReSharper disable CompareOfFloatsByEqualityOperator
+// ReSharper disable IdentifierTypo
+// ReSharper disable Unity.PreferAddressByIdToGraphicsParams
+// ReSharper disable StringLiteralTypo
+// ReSharper disable ClassNeverInstantiated.Global" + "\n");
         CodeGenerator generator = new CodeGenerator();
         foreach (var key in hashSet)
         {
@@ -222,47 +289,52 @@ public static class BetterAnimationUtility
                 propertySetGetClass.AddVariable(new Variable("mInstance", key.Type.FullName) { Modifier = AccessModifier.Private });
                 propertySetGetClass.AddVariable(new Variable("mValue", "float") { Modifier = AccessModifier.Private });
                 var fieldType = GetFieldType(key.Type, key.Property);
-                if (key.Property == "isActive" && key.Type == typeof(GameObject))
-                {
-                    fieldType = (false, typeof(bool));
-                }
-
                 var getMethod = new Method("Get", "float", "return mValue;");
 
-                Method setMethod;
-                if (fieldType.isStruct && fieldType.currentType != typeof(bool))
+                Method setMethod = null;
+                string methodBody = null;
+                bool pass = false;
+                if (GenerateClassConfig.TypeMap.TryGetValue(key.Type,out var map))
                 {
-                    string[] parts = key.Property.Split('.');
-                    setMethod = new Method("Set", "void", $"mValue = value;" +
-                                                          $"var cache = mInstance.{Path.GetFileNameWithoutExtension(key.Property)};\n" +
-                                                          $"cache.{parts[parts.Length - 1]} = value;\n" +
-                                                          $"mInstance.{Path.GetFileNameWithoutExtension(key.Property)} = cache;");
-                }
-                else
-                {
-                    if (key.Property == "isActive" && key.Type == typeof(GameObject))
+                    var method = map.GetMethod(key.Property.Replace(".","_"));
+                    if (method != null)
                     {
-                        setMethod = new Method("Set", "void", "mValue = value;" +
-                                                              "mInstance.SetActive(value == 1);");
+                        methodBody = (string)method.Invoke(null, null);
+                        pass = true;
                     }
-                    else if (fieldType.currentType == typeof(bool))
+                }
+                if (!pass)
+                {
+                    if (fieldType.isStruct && fieldType.currentType != typeof(bool))
                     {
-                        setMethod = new Method("Set", "void", "mValue = value;" +
-                                                              "mInstance." + key.Property + " = value == 1;");
+                        string[] parts = key.Property.Split('.');
+                        methodBody = @$"mValue = value;
+        var cache = mInstance.{Path.GetFileNameWithoutExtension(key.Property)};
+        cache.{parts[parts.Length - 1]} = value;
+        mInstance.{Path.GetFileNameWithoutExtension(key.Property)} = cache;";
                     }
                     else
                     {
-                        setMethod = new Method("Set", "void", "mValue = value;" +
-                                                              "mInstance." + key.Property + " = value;");
+                        if (fieldType.currentType == typeof(bool))
+                        {
+                            methodBody = $@"mValue = value;
+        mInstance.{key.Property} = value == 1;";
+                        }
+                        else
+                        {
+                            methodBody = $@"mValue = value;
+        mInstance.{key.Property} = value;";
+                        }
                     }
                 }
-
+                
                 getMethod.ReturnType = "float";
+                setMethod = new Method("Set", "void", methodBody);
                 setMethod.AddParameter(new Parameter("value", "float"));
                 var constructor = new Method(className, "", $"mInstance = ({key.Type.FullName})value;");
                 constructor.AddParameter(new Parameter("value", "object"));
-                var tweenMethod = new Method("GetTween", "DG.Tweening.Tween", $"mValue = 0;" +
-                                                                              $"return DG.Tweening.DOTween.To(Get,Set,endValue,duration);");
+                var tweenMethod = new Method("GetTween", "DG.Tweening.Tween", @"mValue = 0;
+        return DG.Tweening.DOTween.To(Get, Set, endValue, duration);");
                 tweenMethod.AddParameter(new Parameter("endValue", "float"));
                 tweenMethod.AddParameter(new Parameter("duration", "float"));
                 propertySetGetClass.AddMethod(constructor);
@@ -278,10 +350,10 @@ public static class BetterAnimationUtility
         var variable = new Variable("Delegate", "System.Collections.Generic.Dictionary<string, System.Func<object,float,float,DG.Tweening.Tween>>");
         variable.Defined = VariableModifier.Static;
         variable.DefaultValue = "new System.Collections.Generic.Dictionary<string, System.Func<object,float,float,DG.Tweening.Tween>>" +
-                                "{";
+                                "{\n";
         foreach (var type in allClasses)
         {
-            variable.DefaultValue += $"{{\"{type.Key}\",(t1,t2,t3)=> new {type.Key}(t1).GetTween(t2,t3)}},";
+            variable.DefaultValue += $"     {{\"{type.Key}\",(t1,t2,t3)=> new {type.Key}(t1).GetTween(t2,t3)}},\n";
         }
 
         variable.DefaultValue += "}";
@@ -290,6 +362,7 @@ public static class BetterAnimationUtility
         File.WriteAllText(Path.Combine(BetterAnimationConfig.Instance.GenerateAotPath,"BetterAnimationAot.cs"), sb.ToString());
     }
 
+    [MenuItem("Tools/TestAOT")]
     private static void GeneratorAotCode()
     {
         var hash = ScanAllAnimation();

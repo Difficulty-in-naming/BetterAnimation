@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7bbad3ef5bc4088a00e1168e6a94a28, type: 3}
   m_Name: BetterAnimationConfig
   m_EditorClassIdentifier: 
-  GenerateBetterAnimationConfigPath: Assets/BetterAnimationConfig
-  GenerateAotPath: Assets/Scripts/Generated
+  GenerateBetterAnimationConfigPath: Assets/Res/BetterAnimation
+  GenerateAotPath: Assets/Scripts/BetterAnimation/Generated
+  CodeMap:
+    m_Keys: []
+    m_Values: []

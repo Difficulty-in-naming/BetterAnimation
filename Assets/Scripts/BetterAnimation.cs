@@ -43,7 +43,15 @@ public class BetterAnimation : MonoBehaviour, IAnimationClipSource
             var obj = node.ObjectKey != "" ? transform.Find(node.ObjectKey) : transform;
             foreach (var typeKeyFrame in node.Types)
             {
-                var target = obj.GetComponent(typeKeyFrame.Type);
+                object target = obj;
+                if (typeKeyFrame.Type == typeof(GameObject))
+                {
+                    target = obj.gameObject;
+                }
+                else if(typeKeyFrame.Type != typeof(Transform) && typeKeyFrame.Type != typeof(RectTransform))
+                {
+                    target = obj.GetComponent(typeKeyFrame.Type);   
+                }
                 foreach (var dict in typeKeyFrame.Properties)
                 {
                     AnimationCurve curve = new AnimationCurve();
@@ -69,7 +77,7 @@ public class BetterAnimation : MonoBehaviour, IAnimationClipSource
         var builder = new AnimationBuilder(sequence);
         foreach (var node in keyframeData.Events)
         {
-            sequence.InsertCallback(node.Time, () =>
+            builder.InsertCallback(node.Time, () =>
             {
                 var list = builder.GetEvent(node.EvtName);
                 foreach (var action in list)

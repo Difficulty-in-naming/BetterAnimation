@@ -6,9 +6,10 @@ using UnityEngine;
 
 public class AnimationBuilder
 {
-    private Sequence mSequence;
-    private Dictionary<string, List<Action<AnimationBuilder>>> mEvents = new Dictionary<string, List<Action<AnimationBuilder>>>();
-    private int mId;
+    private Sequence mSequence { get; }
+    private Dictionary<string, List<Action<AnimationBuilder>>> mUserEvents { get; } = new Dictionary<string, List<Action<AnimationBuilder>>>();
+    private Dictionary<float, TweenCallback> mTweenEvents { get; } = new Dictionary<float, TweenCallback>();
+    private float mDelay { get; set; }
     
     public AnimationBuilder(Sequence sequence)
     {
@@ -17,7 +18,7 @@ public class AnimationBuilder
 
     public List<Action<AnimationBuilder>> GetEvent(string eventName)
     {
-        if (mEvents.TryGetValue(eventName, out var value))
+        if (mUserEvents.TryGetValue(eventName, out var value))
         {
             return value;
         }
@@ -39,9 +40,9 @@ public class AnimationBuilder
 
     public AnimationBuilder OnEvent(string evtName, Action<AnimationBuilder> action)
     {
-        if (!mEvents.TryGetValue(evtName, out var list))
+        if (!mUserEvents.TryGetValue(evtName, out var list))
         {
-            mEvents.Add(evtName,list = new List<Action<AnimationBuilder>>());
+            mUserEvents.Add(evtName,list = new List<Action<AnimationBuilder>>());
         }
         list.Add(action);
         return this;
@@ -52,6 +53,13 @@ public class AnimationBuilder
         mSequence.SetLoops(loop);
         return this;
     }
+    
+    public AnimationBuilder SetDelay(float delay)
+    {
+        mSequence.SetDelay(delay);
+        mDelay = delay;
+        return this;
+    }
 
     public AnimationBuilder Flip()
     {
@@ -60,6 +68,24 @@ public class AnimationBuilder
         return this;
     }
 
+    public void InsertCallback(float time,TweenCallback callback)
+    {
+        mSequence.InsertCallback(time, callback);
+        mTweenEvents.Add(time, callback);
+    }
+
+    public void ExecuteRemainingAnimationEvents()
+    {
+        var time = mSequence.position;
+        foreach (var node in mTweenEvents)
+        {
+            if (node.Key >= time - mDelay)
+            {
+                node.Value();
+            }
+        }
+    }
+    
     public void Kill(bool complete = false)
     {
         mSequence.Kill(complete);
@@ -70,6 +96,16 @@ public class AnimationBuilder
         mSequence.PlayForward();
         mSequence.ManualUpdate(Time.deltaTime, unscaledTime ? Time.unscaledDeltaTime : 0);
         return this;
+    }
+    
+    public bool IsActive()
+    {
+        return mSequence.IsActive();
+    }
+    
+    public bool IsComplete()
+    {
+        return mSequence.IsComplete();
     }
     
     #if HAS_UNITASK
